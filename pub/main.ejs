@@ -1,0 +1,94 @@
+<head>
+<link rel="icon" href="img/logo.png">
+<script src="https://kit.fontawesome.com/899fa9cf4c.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@1,500&display=swap" rel="stylesheet">
+</head>
+
+<%- include("./header.ejs") %>
+<br>
+  <style>
+    
+    .header h1{
+      font-family: 'Finlandica', sans-serif;
+      font-size: 50px;
+    }
+  .supportServer {
+    background: #343434;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    color: #fff;
+    padding: 1.2rem;
+    outline: none;
+    transition: all .5s ease;
+}
+
+.supportServer:hover {
+    box-shadow: 0px 0px 25px 6px #000;
+    transform: translateY(3px);
+    color: #fff;
+}
+
+
+.inviteBot {
+    background: linear-gradient(90deg, #6850ff, #a750ff);
+    margin-right: 4rem;
+    border-radius: 8px;
+    border: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    color: #fff;
+    padding: 0 27px;
+    outline: none;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    transition: all .5s ease;
+}
+
+.inviteBot:hover {
+    box-shadow: 0px 0px 25px 6px #a750ff;
+    transform: translateY(3px);
+    color: #fff;
+    }
+    
+    .header {
+    margin: 6rem;
+    text-align: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    margin: 5rem;
+}
+  
+  </style>
+  
+<div class="container">
+<div class="header">
+        <h1>Botunuzu <span style="color: aqua;">7/24</span> Aktif Tutun!</h1>
+        <h6 style="color: red;">Giriş yaptıktan sonra yönetim paneline tıklayınız.</h6>
+        <div class="header-container">
+            <i style="color: slateblue; position: absolute; margin-right: 72rem; margin-top: 5rem; transform: rotate(-15deg);"
+                class="fa-solid fa-code fa-2x"></i>
+            <i style="color: slateblue; position: absolute; margin-left: 72rem; margin-top: 11rem; "
+                class="fa-solid fa-meteor fa-2x"></i>
+            <a href="/giris"
+                class="inviteBot"><i class="fa-brands fa-discord"></i window.location.href = `/yonetim`;>&nbsp;&nbsp;Giriş Yap&nbsp;&nbsp;</a>
+                
+          
+            <a href="/yonetim" class="supportServer"><i class="fa-solid fa-server"></i>&nbsp;&nbsp;Yönetim Paneli&nbsp;&nbsp;</a>
+
+        </div>
+</div>
+  

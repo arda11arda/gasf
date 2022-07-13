@@ -1,0 +1,38 @@
+<head>
+<link rel="icon" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+</head>
+
+<% if(user){ %>
+<%- include("./header.ejs") %>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+  
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-7">
+            <form method="post" action="/yonetim">
+                <center><h3>Proje Ekle</h3></center>
+                <form action="/yonetim" method="post">
+                <input name="link" style="background-color: transparent; color: #3759a3;" type="url" name="link" placeholder="https://pasador.glitch.me" class="form-control" required>
+                <br>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-success" type="submit">Proje ekle!</button>
+                </div>
+                </form>
+            </form>
+          <div class="footer">
+        <p><span style="margin-left: 18.5rem; color: #fff; margin-right: 5px; margin-bottom: 1rempx;">©</span><span
+                style="font-family: 'Source Code Pro', monospace;">coder by </span><span"><a href="https://discord.com/users/936969979151130674" style="text-decoration: none; color: blueviolet; font-family: 'Source Code Pro', monospace; ">pasador</a></span></p>
+    </div>
+        </div>
+    </div>
+</div>
+<% } %>
